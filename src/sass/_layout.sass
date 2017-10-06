@@ -1,0 +1,77 @@
+body
+  background: $ui-dark
+  font:
+    family: $ui-font
+    size: $base-size
+  margin: 0
+  height: 100vh
+
+::-webkit-scrollbar
+  width: 5px
+  height: 5px
+
+::-webkit-scrollbar-button
+  width: 6px
+  height: 6px
+
+::-webkit-scrollbar-thumb
+  background: rgba(125,125,125,.5)
+  border: 16px none #ffffff
+  border-radius: 50px
+  &:hover
+    background: rgba(125,125,125,.8)
+  &:active
+    background: rgba(125,125,125,1)
+
+::-webkit-scrollbar-track
+  background: rgba(0,0,0,0)
+  border: 0px none #ffffff
+  border-radius: 51px
+  &:hover
+    background: rgba(0,0,0,.2)
+  &:active
+    background: rgba(0,0,0,.2)
+
+::-webkit-scrollbar-corner
+  background: transparent
+
+a, label
+  color: $tb-color
+  transition: all .2s ease-in-out
+  text-decoration: none
+  svg
+    width: 1em
+    height: 1em
+    fill: currentColor
+
+button
+  cursor: pointer
+
+main
+  height: 100vh
+  position: relative
+  width: 100vw
+
+h1
+  color: $tb-color
+  text-align: center
+
+p
+  color: darken($tb-color, 30%)
+  font-weight: 100
+  text-align: center
+
+footer
+  background: darken($ui-dark, 10%)
+  color: lighten($ui-dark, 40%)
+  padding: .5em
+  font-size: $small
+  position: fixed
+  bottom: 0
+  left: 0
+  right: 0
+  z-index: 100
+  span
+    font-size: 1em
+    font-weight: 100
+    color: #999
